@@ -1,0 +1,13 @@
+version: '3.9'
+services:
+  terraria:
+      image: ryshe/terraria:tshock-1.4.2.3-4.5.4
+      ports:
+        - '7777:7777'
+      volumes:
+        - ./data/Worlds:/root/.local/share/Terraria/Worlds
+        - ./data/logs:/tshock/logs
+        - ./data/plugins:/plugins
+      environment:
+        WORLD_FILENAME: 'First_World2.wld'
+
