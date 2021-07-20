@@ -11,5 +11,6 @@ services:
         - ${BACKUP_DIR}:/tshock/backups
         - ./data/plugins:/plugins
       environment:
+        TZ: 'Asia/Tokyo'
         WORLD_FILENAME: 'First_World2.wld'
 
