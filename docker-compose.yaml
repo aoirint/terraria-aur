@@ -1,7 +1,9 @@
 version: '3.9'
 services:
   terraria:
-      image: ryshe/terraria:tshock-1.4.2.3-4.5.4
+      image: ryshe/terraria:tshock-1.4.2.3-4.5.5
+      tty: true
+      stdin_open: true
       restart: always
       ports:
         - '7777:7777'
