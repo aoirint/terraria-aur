@@ -10,7 +10,6 @@ services:
       volumes:
         - ./data/Worlds:/root/.local/share/Terraria/Worlds
         - ./data/logs:/tshock/logs
-        - ${BACKUP_DIR}:/tshock/backups
         - ./data/plugins:/plugins
       environment:
         TZ: 'Asia/Tokyo'
