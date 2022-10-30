@@ -6,7 +6,7 @@ services:
       stdin_open: true
       restart: always
       ports:
-        - '7777:7777'
+        - '17777:7777'
       volumes:
         - ./data/Worlds:/root/.local/share/Terraria/Worlds
         - ./data/logs:/tshock/logs
